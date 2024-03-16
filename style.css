@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: hsl(216, 12%, 8%);
+    font: 1rem "Overpass";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 1.2rem;
+    width: 245px;
+    height: 250px;
+    border: none ;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    background-color:  hsl(213, 19%, 18%);
+}
+
+.icon {
+    background-color:hsl(215, 9%, 27%);
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;   
+    
+    & img {
+        height: 10px;
+        margin: 6px 0 0 6px;
+    }
+}
+
+.icon-title {
+    margin-top: 15px;
+    font-size: 1.5rem;    
+}
+
+.icon-text {
+    margin: 14px 0 10px 0;
+    font-size: 0.7em;
+    color: hsl(217, 12%, 63%);
+}
+
+.icon-rate {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+
+    & button {
+        padding: 1rem;
+        border-radius: 50%;
+        border: none;
+        margin: 10px 1px;
+        background-color: hsla(220, 2%, 25%, 0.989);
+        color:  hsl(216, 12%, 54%);
+    }
+
+    & button:hover {
+        background-color: hsl(217, 12%, 63%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    & button:active, button:focus {
+        background-color: hsl(25, 97%, 53%);
+        color: hsla(0, 0%, 100%, 0.699);
+    }
+}
+
+.icon-btn {
+    display: grid;
+    place-content: center;
+    margin-top: 8px;
+
+    & button {
+        font-weight: 700;
+        padding: 0.5rem 6.1rem;
+        border-radius: 20px;
+        background-color: hsl(25, 97%, 53%);
+        color: hsla(0, 0%, 100%, 0.699);
+        border: none;
+    }
+    
+    & button:active {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+
+    }
+}
+
+.container2 {
+    position: relative;
+    display: none;
+    padding: 1.2rem;
+    width: 245px;
+    height: 250px;
+    border: none ;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    background-color:  hsl(213, 19%, 18%);
+
+    & img {
+        height: 100px;
+        padding-left: 43px;
+    }
+
+    & div:nth-child(2) {
+        white-space: nowrap;
+        font-size: 0.8rem;
+        color: hsl(25, 97%, 53%);
+        border: none;
+        margin: 10px 0 0 35px;
+        padding: 5px 0 0 30px;
+        width: 150px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: hsla(223, 6%, 23%, 0.989);
+    }
+    
+    & div:nth-child(3) {
+        font-size: 1.1rem;
+        margin: 20px 0px -9px 58px;
+    
+    }
+
+    & div:last-child {
+        display: grid;
+        place-content: center;
+        text-align: center;        
+        font-size: 0.6rem;
+        margin-top: 20px;
+        color:hsl(217, 12%, 63%);
+    }
+};
